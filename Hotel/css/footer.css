@@ -1,0 +1,42 @@
+/* ------ Début Bas de page ------ */
+footer {
+    background-color: #e8e8e8;
+    color:#999999;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer .flex-item{
+    padding: 8px;
+    width: 320px;
+    margin: 0 30px;
+}
+
+#lien-util{
+    width:200px;
+}
+
+.footer a {
+    color:#999999;
+	text-decoration:none;
+}
+
+#first-footer{
+    margin-bottom: 25px;
+    
+}
+
+.flex-item svg {
+    margin-right: 5px;
+}
+
+.end-footer {
+    text-align: center;
+    background-color:#6E6E6E;
+    padding: 10px;
+    margin:0;
+    min-width: 300px;
+}
+
+/* ------ Fin Bas de page ------ */

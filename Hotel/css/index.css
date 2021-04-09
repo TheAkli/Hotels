@@ -1,0 +1,83 @@
+.titre, h1.titre { /* Joli titre au milleu de l'image d'accueil */
+	margin: 0;
+	padding-top: 3px;
+	font-family: "Ananda Black";
+	font-size: 2em;
+	text-align: center;
+	color: #ec2929;
+}
+
+.fleche-animee { /* Flèche annimée sous le titre */position: absolute;
+  	left: 49%;
+  	width: 24px;
+  	height: 24px;
+  	border-left: 2px solid #fff;
+  	border-bottom: 2px solid #fff;
+  	transform: rotate(-45deg);
+  	animation: sdb05 1.5s infinite;
+}
+
+@keyframes sdb05 {
+  	0% { transform: rotate(-45deg) translate(0, 0); opacity: 0; }
+  	50% { opacity: 1; }
+  	100% { transform: rotate(-45deg) translate(-20px, 20px); opacity: 0; }
+}
+
+/* Image de l'accueil */
+.image-cover {
+	background-image: url('../img/bandeau-accueil.jpg');
+	background-size: cover;
+	background-position: center; 
+}
+
+.image-cover h1{
+    color:white;
+	padding-top: 230px;
+    
+}
+
+#description h2{
+    margin: 0;
+	padding-top: 3px;
+	font-family: "Ananda Black";
+	color: #ec2929;
+    margin-left: 12px;
+    margin-top: 12px;
+    
+}
+
+#description .flex-container{
+    justify-content: left;
+    min-width: 300px;
+}
+
+#description p{
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+#description .flex-item{
+    margin: 0 20px 20px;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.column{
+	-webkit-columns: 2 300px;
+	-moz-columns: 2 300px;
+	columns: 2 300px;
+}
+
+.chiffre {
+  font-family: "akaDora";
+}
+
+/* Carte Google Map */
+#carte {
+	height: 400px;
+	width: 100%;
+}
+
+.gm-style-pbt {
+    text-align: center;
+}

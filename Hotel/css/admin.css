@@ -1,0 +1,43 @@
+/* surcharge pour la page d'administration */
+input, textarea, select {
+  margin: 0px 0px;
+  width: 75%;
+  resize: vertical;
+}
+
+table { 
+    margin-bottom: 20px; 
+}
+
+td { 
+    padding: 5px 30px;
+    margin-left: 10px;
+}
+
+#imgArticle {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#calendrier {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.flex-container div {
+    justify-content: left;
+    min-width: 300px;
+}
+
+.flex-container > p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.flex-item p {
+    margin: 0 20px 20px;
+    min-width: 200px;
+    max-width: 500px;
+}

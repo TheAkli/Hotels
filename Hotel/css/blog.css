@@ -1,0 +1,63 @@
+/* ------ Début Blog ------ */
+.blog a {
+	text-decoration: none;
+	color:black;
+}
+
+.blog h2{
+	margin: 0;
+	margin-bottom: 0;
+}
+
+.blog time {
+	margin-top: 0;
+}
+
+div.numero-page {
+	text-align:center;
+}
+
+/* ------ Début visuel article  ------ */
+.blog > article > header > h2 {
+	margin: 0px 0px;
+}
+
+.blog > article {
+	margin: 20px 0px;
+}
+
+.commentaire {
+  	background:#f8f8f8;
+  	border: 1px solid #f0f0f0;
+  	padding: 20px;
+  	margin: 20px 0px;
+}
+
+.commentaire p {
+	margin:0px;
+}
+
+.commentaire .pseudo {
+	margin-bottom: 10px;
+}
+
+.commentaire span {
+	color:gray;
+	font-style: italic;
+}
+
+.commentaire time {
+	color:gray;
+	float:right;
+}
+
+/* ------- Formulaire commentaire du blog ------------*/
+
+.blog >  input, .blog > textarea, .blog > select {
+	margin: 10px 0px;
+	font-size: 15px;
+	width: 50%;
+}
+/* ------ Fin visuel article  ------ */
+
+/* ------ Fin Blog ------ */

@@ -1,0 +1,150 @@
+/* ----- import des autres css ----- */
+@import url(menu.css);
+@import url(index.css);
+@import url(hotel.css);
+@import url(blog.css);
+@import url(contact.css);
+@import url(footer.css);
+@import url(reservation.css);
+@import url(admin.css);
+
+/* ------ Polices ------ */
+@font-face {
+	font-family: "Open Sans";
+	src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+	font-family: "Ananda Black";
+	src: url('../fonts/Ananda-Black.ttf');
+}
+
+@font-face {
+    font-family:"akaDora";
+    src:url('../fonts/akaDora.ttf');
+    font-weight:normal;
+}
+
+/* ---- style css de base ----- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	font-family: "Open Sans", Helvetica, sans-serif;    
+	overflow-x:hidden;      /* cache les scrollbar horizontales */
+	box-sizing: border-box; /* utilise toute la largeur */
+	margin: 0 0 100px;      /* 100px = hauteur du footer */
+}
+
+section {
+	position: relative;
+	padding: 0px 10%;
+    margin-bottom: 30px;
+}
+
+
+header > hr {
+  	height: 1px;
+  	background-color: lightgray;
+  	border: 0;
+}
+
+h1{
+    font-size: 2em;
+	margin-top : 20px; 
+}
+
+h2{
+	font-weight: bold;
+    margin-top: 40px;
+}
+
+h3{
+    margin-top: 35px;
+    color: #ec2929;
+}
+
+p{
+    text-align: justify;
+}
+
+a {
+	color:#535352; /* couleur des liens */
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration : underline;
+}
+
+/* ------ Input/textarea/select ----- */
+input:focus, textarea:focus, select:focus {
+	border-color: #66AFE9;
+	outline: 0px none;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+
+input, textarea, select {
+	display: block;
+	padding: 8px 8px;
+	width: 100%;
+	resize: vertical;
+	color: #6F6F6F;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+/* ------ Flex-Container ------ */
+
+
+.flex-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*---------- Button -----------*/
+button, a.button {
+    background-image: linear-gradient(to bottom, #ec2929 0px, #9f0606 100%);
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    margin: 13px 5px;
+    padding: 10px 40px;
+    border: 0px;
+    color: white;
+    font-weight:bold;
+    text-decoration: none; 
+}
+
+button[type=reset]  {
+    background-image: linear-gradient(to bottom, #e8e8e8 0px, #e8e8e8 100%);
+    color: #999;
+}
+
+
+/* -------- Media Queries --------- */
+@media(max-width: 865px) {
+    .liens{display:none}
+    .actif{display:none}
+    .menu-horizontal a { left:-10%; }
+    a.logo { left:-50px; }
+    nav.menu-horizontal { white-space: nowrap; }
+}
+
+@media(max-width: 320px) {
+    .logo{display: none}
+}
+
+@media(min-width: 865px) {
+	.btn-ouvrir{display:none}
+	.menu-horizontal a { left:10%; }
+}
