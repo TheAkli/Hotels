@@ -17,7 +17,7 @@
         <a href="#" onclick="ouvrirMenu()" class="btn-ouvrir"><img src="img/menu.svg" alt="Menu"/></a>
         <a href="webForm1.aspx" class="logo">STAK Hotel</a>
     <a href="#">Hôtel</a>
-    <a href="#">Contact</a>
+    <a href="contact.aspx">Contact</a>
     </nav>
 
 	<div id="contenu"> 
