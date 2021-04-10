@@ -82,6 +82,7 @@
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -111,8 +112,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\connexion.aspx" />
-    <Content Include="admin\index.aspx" />
+    <Content Include="contact.aspx" />
     <Content Include="css\index.css" />
     <Content Include="css\style.css" />
     <Content Include="Global.asax" />
@@ -121,19 +121,12 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\connexion.aspx.cs">
-      <DependentUpon>connexion.aspx</DependentUpon>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\connexion.aspx.designer.cs">
-      <DependentUpon>connexion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -164,6 +157,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="admin\" />
     <Folder Include="App_Data\" />
     <Folder Include="img\" />
     <Folder Include="Models\" />
